@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>f4562dfe-0169-4389-a3fb-5410b8d233cf</ProjectGuid>
+    <ProjectGuid>efc38b88-e294-487a-9b36-1f274544e909</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Photograph</RootNamespace>
-    <AssemblyName>Photograph</AssemblyName>
+    <RootNamespace>MyPhotoAlbum</RootNamespace>
+    <AssemblyName>MyPhotoAlbum</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

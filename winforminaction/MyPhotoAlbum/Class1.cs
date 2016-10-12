@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyPhotos
+namespace MyPhotoAlbum
 {
-    class Photograph
+    public class Class1
     {
     }
 }
