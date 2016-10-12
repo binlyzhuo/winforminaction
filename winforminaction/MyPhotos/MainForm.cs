@@ -28,5 +28,22 @@ namespace MyPhotos
             }
             dlg.Dispose();
         }
+
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Title = "Open Photo";
+            dlg.Filter = "jpg files (*.jpg)|*.jpg|All files(*.*)|*.*";
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                pbxPhoto.Image = new Bitmap(dlg.OpenFile());
+            }
+            dlg.Dispose();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
