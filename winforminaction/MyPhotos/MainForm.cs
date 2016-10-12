@@ -12,6 +12,7 @@ namespace MyPhotos
 {
     public partial class MainForm : Form
     {
+        //     v v  private ContextMenuStrip ctxMenuPhoto;
         public MainForm()
         {
             InitializeComponent();
@@ -44,6 +45,11 @@ namespace MyPhotos
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void scaleToFitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

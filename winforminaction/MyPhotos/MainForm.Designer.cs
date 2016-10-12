@@ -28,18 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pbxPhoto = new System.Windows.Forms.PictureBox();
+            this.ctxMenuPhoto = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scaleToFitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPhoto)).BeginInit();
+            this.ctxMenuPhoto.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbxPhoto
             // 
+            this.pbxPhoto.ContextMenuStrip = this.ctxMenuPhoto;
             this.pbxPhoto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbxPhoto.Location = new System.Drawing.Point(0, 25);
             this.pbxPhoto.Name = "pbxPhoto";
@@ -47,6 +54,13 @@
             this.pbxPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxPhoto.TabIndex = 1;
             this.pbxPhoto.TabStop = false;
+            // 
+            // ctxMenuPhoto
+            // 
+            this.ctxMenuPhoto.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.imageToolStripMenuItem});
+            this.ctxMenuPhoto.Name = "ctxMenuPhoto";
+            this.ctxMenuPhoto.Size = new System.Drawing.Size(153, 48);
             // 
             // menuStrip1
             // 
@@ -88,6 +102,28 @@
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // imageToolStripMenuItem
+            // 
+            this.imageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.scaleToFitToolStripMenuItem,
+            this.actualSizeToolStripMenuItem});
+            this.imageToolStripMenuItem.Name = "imageToolStripMenuItem";
+            this.imageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.imageToolStripMenuItem.Text = "Image";
+            // 
+            // scaleToFitToolStripMenuItem
+            // 
+            this.scaleToFitToolStripMenuItem.Name = "scaleToFitToolStripMenuItem";
+            this.scaleToFitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.scaleToFitToolStripMenuItem.Text = "Scale to Fit";
+            this.scaleToFitToolStripMenuItem.Click += new System.EventHandler(this.scaleToFitToolStripMenuItem_Click);
+            // 
+            // actualSizeToolStripMenuItem
+            // 
+            this.actualSizeToolStripMenuItem.Name = "actualSizeToolStripMenuItem";
+            this.actualSizeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.actualSizeToolStripMenuItem.Text = "Actual Size";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -99,6 +135,7 @@
             this.Name = "MainForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pbxPhoto)).EndInit();
+            this.ctxMenuPhoto.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -113,6 +150,10 @@
         private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip ctxMenuPhoto;
+        private System.Windows.Forms.ToolStripMenuItem imageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scaleToFitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualSizeToolStripMenuItem;
     }
 }
 
